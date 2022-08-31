@@ -1,53 +1,53 @@
 /*------------- CARRITO ---------------*/
-// cart
+// Carrito
 let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 
-//Open cart
+//Abrir carrito
 cartIcon.onclick = () =>{
   cart.classList.add("active");
 }
-//close cart
+//Cerrar carrito
 closeCart.onclick = () =>{
   cart.classList.remove("active");
 }
 
 
-// cart working js
+// Carro JS
 if (document.readyState == 'loading') {
   document.addEventListener('DOMContentLoaded', ready);
 } else{
   ready();
 }
 
-// Making function
+// Haciendo funcion
 function ready(){ 
-// Remove items from cart
+// Remover items del carrito
   var removeCartButtons = document.getElementsByClassName('cart-remove');
   console.log(removeCartButtons);
   for (var i = 0; i < removeCartButtons.length; i++){
     var button = removeCartButtons[i];
     button.addEventListener("click", removeCartItem);
   }
-  // Quantity changes
+  // Cambios de cantidad
   var quantityInputs = document.getElementsByClassName('cart-quantity');
   for (var i = 0; i < removeCartButtons.length; i++){
     var input = quantityInputs[i];
     input.addEventListener("change", quantityChanged);
   }
-  // Add to cart
+  // Añadir al carrito
   var addCart = document.getElementsByClassName('add-cart');
   for (var i = 0; i < addCart.length; i++){
     var button = addCart[i];
     button.addEventListener("click", addCartClicked);
   }
-  // Buy button work
+  // Funcion del boton comprar
   document
   .getElementsByClassName('btn-buy')[0]
   .addEventListener('click', buyButtonClicked);
 } 
-// Buy Button
+// Boton comprar
 function buyButtonClicked(){
   alert('Se realizó tu pedido');
   var cartContent = document.getElementsByClassName('cart-content')[0];
@@ -57,13 +57,13 @@ function buyButtonClicked(){
   updatetotal();
 
 }
-// Remove items from cart
+// Remover items del carrito
 function removeCartItem(event){
   var buttonClicked = event.target;
   buttonClicked.parentElement.remove();
   updatetotal();
 }
-  // Quantity changes
+  // Cambios de cantidad
 function quantityChanged(event){
   var input = event.target
   if (isNaN(input.value) || input.value <= 0){
@@ -71,7 +71,7 @@ function quantityChanged(event){
   }
   updatetotal();
 }
-// Add to cart
+// Añadir al carrito
 function addCartClicked(event){
   var button = event.target;
   var shopProducts = button.parentElement;
@@ -110,7 +110,7 @@ cartShopBox
 .getElementsByClassName('cart-quantity')[0]
 .addEventListener('change', quantityChanged);
 }
-  // Update Total
+  // Actualizacion total
   function updatetotal(){
     var cartContent = document.getElementsByClassName('cart-content')[0];
     var cartBoxes = cartContent = cartContent.getElementsByClassName('cart-box');

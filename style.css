@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: (#ffd6d6);
 }
 nav{
     flex: 1;
@@ -139,7 +140,7 @@ h4{
     border: 1px solid black;
 
 }
-/* --------- Oferta ----------- */
+/* ------------------------ Oferta ------------------------ */
 .offer{
     background: radial-gradient(#fff,#ffd6d6);
     margin-top: 80px;
@@ -152,7 +153,7 @@ small{
     color: #555;
 }
 
-/*------------ Testimonial -----------*/
+/*---------------------- Testimonial ----------------------*/
 
 .testimonial{
     padding-top: 100px;
@@ -186,9 +187,9 @@ small{
     color: #555;
     font-size: 16px
 }
-/*------------- Brands ------------ */
+/*---------------------- Brands ------------------------ */
 .brands{
-    margin: 100px auto;
+    margin: 80px auto;
 }
 .col-5{
     width: 160px;
@@ -201,7 +202,7 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
-/*------------ Footer ------------ */
+/*----------------------- Footer ------------------------ */
 .footer{
     background: #000;
     color: #8a8a8a;
@@ -262,7 +263,7 @@ ul{
     margin: 1.5px;
 }
 
-/*------------- CARRITO ---------------*/
+/*------------------------- Carrito -------------------------*/
 .nav{
     display: flex;
     align-items: center;
@@ -278,8 +279,6 @@ ul{
     font-size: 1.8rem;
     cursor: pointer;
     position: fixed;
-    background-color: #ffd6d63f;
-    border-radius: 5px;
     margin-left: 76rem;
 }
 .add-cart{
@@ -383,7 +382,7 @@ ul{
     cursor: pointer;
 }
 
-/* Breakpoints / Responsive */
+/* ----------- Responsive carrito ------------ */
 @media (max-width:1080px) {
     .nav{
         padding: 15px;
@@ -415,6 +414,11 @@ ul{
     #cart-icon{
         margin-left: 16.5rem;
     }
+    .col-4 img{
+        width: 11rem;
+        height: 14rem;
+
+    }
     
 }
 @media (max-width:360px) {
@@ -426,7 +430,7 @@ ul{
     }
     #cart-icon{
         margin-left: 15rem;
-    } 
+    }
 }
 
 /*------------- media query para menu ---------------*/

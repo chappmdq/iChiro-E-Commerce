@@ -49,7 +49,7 @@ function ready(){
 } 
 // Boton comprar
 function buyButtonClicked(){
-  alert('Se realizó tu pedido');
+  swal("¡Se realizo tu pedido!", "", "success");
   var cartContent = document.getElementsByClassName('cart-content')[0];
   while (cartContent.hasChildNodes()){
     cartContent.removeChild(cartContent.firstChild)
@@ -73,7 +73,7 @@ function quantityChanged(event){
 }
 // Añadir al carrito
 function addCartClicked(event){
-  alert('Añadiste un producto al carrito');
+  swal("", "Añadiste un producto al carrito", "info");
   var button = event.target;
   var shopProducts = button.parentElement;
   var title = shopProducts.getElementsByClassName("product-title")[0].innerText;

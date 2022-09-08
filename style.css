@@ -99,12 +99,12 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
-    /* cursor: pointer; */
 }
 .col-4 img{
    /* width: 100%; */
    width: 15rem;
    height: 20rem;
+   border-radius: 6px;
 }
 .title{
     text-align: center;
@@ -138,6 +138,7 @@ h4{
     transform: translateY(-1px);
     padding: 10px;
     border: 1px solid black;
+    border-radius: 6px;
 
 }
 /* ------------------------ Oferta ------------------------ */
@@ -289,6 +290,7 @@ ul{
     color: white;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 .cart{
     position: fixed;

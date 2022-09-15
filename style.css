@@ -167,12 +167,20 @@ small{
     transition: transform 0.5s;
 }
 .testimonial .col-3 img{
-    width: 50px;
+    width: 56px;
     margin-top: 20px;
     border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(135deg, red, violet 50%, transparent 50%);
+    background-size: 250%;
+    background-position: 100% 100%;
+    transition: background 0.5s;
 }
 .testimonial .col-3:hover{
     transform: translateY(-10px);
+}
+.testimonial .col-3 img:hover{
+    background-position: 0% 0%;
 }
 .fa.fa-quote-left{
     font-size: 34px;
